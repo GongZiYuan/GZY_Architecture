@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1C53BF1C59A7630036F4CE /* GZYApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C53BE1C59A7630036F4CE /* GZYApiProxy.m */; };
+		3F1C53C21C59F87A0036F4CE /* GZYURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */; };
 		3F88BDE41C3F5E930064CD3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BDE31C3F5E930064CD3A /* main.m */; };
 		3F88BDE71C3F5E930064CD3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BDE61C3F5E930064CD3A /* AppDelegate.m */; };
 		3F88BDEA1C3F5E930064CD3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BDE91C3F5E930064CD3A /* ViewController.m */; };
@@ -56,6 +58,10 @@
 
 /* Begin PBXFileReference section */
 		3F1C53B41C5871290036F4CE /* NetGlobalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetGlobalData.h; sourceTree = "<group>"; };
+		3F1C53BD1C59A7630036F4CE /* GZYApiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZYApiProxy.h; sourceTree = "<group>"; };
+		3F1C53BE1C59A7630036F4CE /* GZYApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYApiProxy.m; sourceTree = "<group>"; };
+		3F1C53C01C59F87A0036F4CE /* GZYURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZYURLResponse.h; sourceTree = "<group>"; };
+		3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYURLResponse.m; sourceTree = "<group>"; };
 		3F88BDDF1C3F5E930064CD3A /* GZY_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZY_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88BDE31C3F5E930064CD3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F88BDE51C3F5E930064CD3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +154,10 @@
 				3F1C53B11C586FD60036F4CE /* Assistants */,
 				3F1C53B21C586FD60036F4CE /* Services */,
 				3F1C53B41C5871290036F4CE /* NetGlobalData.h */,
+				3F1C53BD1C59A7630036F4CE /* GZYApiProxy.h */,
+				3F1C53BE1C59A7630036F4CE /* GZYApiProxy.m */,
+				3F1C53C01C59F87A0036F4CE /* GZYURLResponse.h */,
+				3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */,
 			);
 			path = NetComponents;
 			sourceTree = "<group>";
@@ -523,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1C53BF1C59A7630036F4CE /* GZYApiProxy.m in Sources */,
 				3F88BE591C3F7EA80064CD3A /* ServiceConfig.m in Sources */,
 				3F88BE301C3F5F480064CD3A /* AFHTTPRequestOperation.m in Sources */,
 				3F88BE5B1C3F7EA80064CD3A /* ServiceManager.m in Sources */,
@@ -537,6 +548,7 @@
 				3F9F74F51C45255300F42F73 /* MainViewController.m in Sources */,
 				3F88BE561C3F7EA80064CD3A /* HttpResponseTool.m in Sources */,
 				3F88BDE71C3F5E930064CD3A /* AppDelegate.m in Sources */,
+				3F1C53C21C59F87A0036F4CE /* GZYURLResponse.m in Sources */,
 				3F88BE361C3F5F480064CD3A /* AFSecurityPolicy.m in Sources */,
 				3F88BE371C3F5F480064CD3A /* AFURLRequestSerialization.m in Sources */,
 				3F88BE321C3F5F480064CD3A /* AFURLConnectionOperation.m in Sources */,

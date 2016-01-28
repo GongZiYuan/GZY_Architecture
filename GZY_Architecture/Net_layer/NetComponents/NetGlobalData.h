@@ -9,5 +9,10 @@
 #ifndef NetGlobalData_h
 #define NetGlobalData_h
 
+typedef NS_ENUM(NSInteger, GZYURLResponseStatus){
+    GZYURLResponseStatusSuccess,
+    GZYURLResponseStatusErrorTimeout,
+    GZYURLResponseStatusErrorNoNetwork
+};
 
 #endif /* NetGlobalData_h */
