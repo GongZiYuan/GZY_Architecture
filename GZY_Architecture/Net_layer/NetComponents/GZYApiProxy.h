@@ -14,4 +14,10 @@ typedef void(^GZYNetCallback)(GZYURLResponse *response);
 
 @interface GZYApiProxy : NSObject
 
++ (instancetype)sharedInstance;
+
+- (void)cancelRequestWithRequestID:(NSNumber *)requestID;
+- (void)cancelRequestWithRequestIDList:(NSArray *)requestIDList;
+
 @end
+
