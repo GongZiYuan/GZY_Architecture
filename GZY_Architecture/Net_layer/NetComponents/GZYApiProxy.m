@@ -11,7 +11,6 @@
 @interface GZYApiProxy ()
 
 @property(nonatomic, strong) NSMutableDictionary *requestOperationTable;
-@property(nonatomic, strong) NSMutableDictionary *userInfoTable;
 @property(nonatomic, strong) NSNumber *recordedRequestId;
 
 @property(nonatomic, strong) AFHTTPRequestOperationManager *operationManager;
@@ -37,13 +36,6 @@
     return _operationManager;
 }
 
--(NSMutableDictionary *)userInfoTable{
-    if (_userInfoTable == nil) {
-        _userInfoTable = [[NSMutableDictionary alloc] init];
-    }
-    return _userInfoTable;
-}
-
 #pragma mark - life cycle
 + (instancetype)sharedInstance{
     static dispatch_once_t onceToken;
@@ -54,13 +46,28 @@
     return sharedInstance;
 }
 
+#pragma mark - public methods
+
+
+-(NSNumber*)callApiWithParams:(NSDictionary *)params serviceIdentifier:(NSString *)servieIdentifier requestType:(GZYAPIRequestType)requestType success:(GZYNetCallback)success fail:(GZYNetCallback)fail{
+    if (requestType == GZYAPIRequestTypeGet) {
+        return [self callGETWithParams:params serviceIdentifier:servieIdentifier methodName:@"GET" success:success fail:fail];
+    }else{
+        return nil;
+    }
+}
+
+- (NSNumber*)callGETWithParams:(NSDictionary *)params serviceIdentifier:(NSString *)servieIdentifier methodName:(NSString *)methodName success:(GZYNetCallback)success fail:(GZYNetCallback)fail{
+    NSURLRequest *request = [[GZYRequestGenerator sharedInstance] generateGETRequestWithServiceIdentifier:servieIdentifier requestParams:params methodName:methodName];
+    NSNumber *requestId = [self callApiWithURLRequest:request success:success fail:fail];
+    return requestId;
+}
 
 - (void)cancelRequestWithRequestID:(NSNumber *)requestID{
     
     NSOperation *requestOperation = self.requestOperationTable[requestID];
     [requestOperation cancel];
     [self.requestOperationTable removeObjectForKey:requestID];
-    [self.userInfoTable removeObjectForKey:requestID];
 }
 
 - (void)cancelRequestWithRequestIDList:(NSArray *)requestIDList{
@@ -91,9 +98,8 @@
                                                                         requestId:requestId
                                                                           request:operation.request
                                                                      responseData:operation.responseData
-                                                                         userInfo:[self.userInfoTable objectForKey:requestId]
+                                                                         userInfo:nil
                                                                            status:GZYURLResponseStatusSuccess];
-        [self.userInfoTable removeObjectForKey:requestId];
         
         successCallback ? successCallback(response) : nil;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -110,10 +116,9 @@
                                                                         requestId:requestId
                                                                           request:operation.request
                                                                      responseData:operation.responseData
-                                                                         userInfo:[self.userInfoTable objectForKey:requestId]
+                                                                         userInfo:nil
                                                                             error:error];
         
-        [self.userInfoTable removeObjectForKey:requestId];
         failCallback ? failCallback(response) : nil;
     }];
     

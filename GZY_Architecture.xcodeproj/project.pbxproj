@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F1C53BF1C59A7630036F4CE /* GZYApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C53BE1C59A7630036F4CE /* GZYApiProxy.m */; };
 		3F1C53C21C59F87A0036F4CE /* GZYURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */; };
+		3F1C53C51C5B086F0036F4CE /* GZYRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C53C41C5B086F0036F4CE /* GZYRequestGenerator.m */; };
+		3F1C53C81C5B102B0036F4CE /* GZYAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C53C71C5B102B0036F4CE /* GZYAPIBaseManager.m */; };
 		3F88BDE41C3F5E930064CD3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BDE31C3F5E930064CD3A /* main.m */; };
 		3F88BDE71C3F5E930064CD3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BDE61C3F5E930064CD3A /* AppDelegate.m */; };
 		3F88BDEA1C3F5E930064CD3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BDE91C3F5E930064CD3A /* ViewController.m */; };
@@ -62,6 +64,10 @@
 		3F1C53BE1C59A7630036F4CE /* GZYApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYApiProxy.m; sourceTree = "<group>"; };
 		3F1C53C01C59F87A0036F4CE /* GZYURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZYURLResponse.h; sourceTree = "<group>"; };
 		3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYURLResponse.m; sourceTree = "<group>"; };
+		3F1C53C31C5B086F0036F4CE /* GZYRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZYRequestGenerator.h; sourceTree = "<group>"; };
+		3F1C53C41C5B086F0036F4CE /* GZYRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYRequestGenerator.m; sourceTree = "<group>"; };
+		3F1C53C61C5B102B0036F4CE /* GZYAPIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZYAPIBaseManager.h; sourceTree = "<group>"; };
+		3F1C53C71C5B102B0036F4CE /* GZYAPIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYAPIBaseManager.m; sourceTree = "<group>"; };
 		3F88BDDF1C3F5E930064CD3A /* GZY_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZY_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88BDE31C3F5E930064CD3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F88BDE51C3F5E930064CD3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +164,8 @@
 				3F1C53BE1C59A7630036F4CE /* GZYApiProxy.m */,
 				3F1C53C01C59F87A0036F4CE /* GZYURLResponse.h */,
 				3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */,
+				3F1C53C61C5B102B0036F4CE /* GZYAPIBaseManager.h */,
+				3F1C53C71C5B102B0036F4CE /* GZYAPIBaseManager.m */,
 			);
 			path = NetComponents;
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 		3F1C53B11C586FD60036F4CE /* Assistants */ = {
 			isa = PBXGroup;
 			children = (
+				3F1C53C31C5B086F0036F4CE /* GZYRequestGenerator.h */,
+				3F1C53C41C5B086F0036F4CE /* GZYRequestGenerator.m */,
 			);
 			path = Assistants;
 			sourceTree = "<group>";
@@ -536,12 +546,14 @@
 				3F1C53BF1C59A7630036F4CE /* GZYApiProxy.m in Sources */,
 				3F88BE591C3F7EA80064CD3A /* ServiceConfig.m in Sources */,
 				3F88BE301C3F5F480064CD3A /* AFHTTPRequestOperation.m in Sources */,
+				3F1C53C51C5B086F0036F4CE /* GZYRequestGenerator.m in Sources */,
 				3F88BE5B1C3F7EA80064CD3A /* ServiceManager.m in Sources */,
 				3F88BE351C3F5F480064CD3A /* AFNetworkReachabilityManager.m in Sources */,
 				3F88BE5C1C3F7EA80064CD3A /* WCNetUtils.m in Sources */,
 				3F88BE341C3F5F480064CD3A /* AFURLSessionManager.m in Sources */,
 				3F88BE551C3F7EA80064CD3A /* HttpRequestTool.m in Sources */,
 				3F88BE541C3F7EA80064CD3A /* HttpRequestService.m in Sources */,
+				3F1C53C81C5B102B0036F4CE /* GZYAPIBaseManager.m in Sources */,
 				3F88BE5A1C3F7EA80064CD3A /* ServiceDataAnalyze.m in Sources */,
 				3F88BDEA1C3F5E930064CD3A /* ViewController.m in Sources */,
 				3F88BE311C3F5F480064CD3A /* AFHTTPRequestOperationManager.m in Sources */,

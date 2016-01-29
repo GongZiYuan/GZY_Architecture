@@ -10,9 +10,15 @@
 #define NetGlobalData_h
 
 typedef NS_ENUM(NSInteger, GZYURLResponseStatus){
-    GZYURLResponseStatusSuccess,
+    GZYURLResponseStatusSuccess = 1,
     GZYURLResponseStatusErrorTimeout,
     GZYURLResponseStatusErrorNoNetwork
 };
 
+typedef NS_ENUM(NSInteger, GZYAPIRequestType){
+     GZYAPIRequestTypeGet = 1,
+     GZYAPIRequestTypePost
+};
+
+static NSTimeInterval kGZYNetworkingTimeoutSeconds = 20.0f;
 #endif /* NetGlobalData_h */
