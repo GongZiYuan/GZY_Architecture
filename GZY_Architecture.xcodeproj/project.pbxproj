@@ -43,6 +43,7 @@
 		3F88BE5C1C3F7EA80064CD3A /* WCNetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BE511C3F7EA80064CD3A /* WCNetUtils.m */; };
 		3F9F74F51C45255300F42F73 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F74F11C45255300F42F73 /* MainViewController.m */; };
 		3F9F74F61C45255300F42F73 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F74F21C45255300F42F73 /* MainViewController.xib */; };
+		3FF42B991C5CBC030011D13B /* GZYAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF42B981C5CBC030011D13B /* GZYAppContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 		3F9F74F01C45255300F42F73 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3F9F74F11C45255300F42F73 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3F9F74F21C45255300F42F73 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3FF42B971C5CBC030011D13B /* GZYAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZYAppContext.h; sourceTree = "<group>"; };
+		3FF42B981C5CBC030011D13B /* GZYAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZYAppContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				3F1C53C11C59F87A0036F4CE /* GZYURLResponse.m */,
 				3F1C53C61C5B102B0036F4CE /* GZYAPIBaseManager.h */,
 				3F1C53C71C5B102B0036F4CE /* GZYAPIBaseManager.m */,
+				3FF42B971C5CBC030011D13B /* GZYAppContext.h */,
+				3FF42B981C5CBC030011D13B /* GZYAppContext.m */,
 			);
 			path = NetComponents;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				3F1C53BF1C59A7630036F4CE /* GZYApiProxy.m in Sources */,
 				3F88BE591C3F7EA80064CD3A /* ServiceConfig.m in Sources */,
 				3F88BE301C3F5F480064CD3A /* AFHTTPRequestOperation.m in Sources */,
+				3FF42B991C5CBC030011D13B /* GZYAppContext.m in Sources */,
 				3F1C53C51C5B086F0036F4CE /* GZYRequestGenerator.m in Sources */,
 				3F88BE5B1C3F7EA80064CD3A /* ServiceManager.m in Sources */,
 				3F88BE351C3F5F480064CD3A /* AFNetworkReachabilityManager.m in Sources */,

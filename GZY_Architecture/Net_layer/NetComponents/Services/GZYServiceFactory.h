@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GZYService.h"
 
 @interface GZYServiceFactory : NSObject
 
++(instancetype)sharedInstance;
+
+-(GZYService *)serviceWithIdentifier:(NSString *)identifier;
 @end

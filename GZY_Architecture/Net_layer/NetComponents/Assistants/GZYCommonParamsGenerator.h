@@ -10,4 +10,6 @@
 
 @interface GZYCommonParamsGenerator : NSObject
 
++(NSDictionary *)commonParamsDictionary;
+
 @end
